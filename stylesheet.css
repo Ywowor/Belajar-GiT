@@ -8,9 +8,9 @@ html, body, * {
 
 /* Bagian Layout */
 .bg-slideshow {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  padding: 75px 0;
+  padding: 25vh 0;
   background-color: black;
 }
 
@@ -20,4 +20,81 @@ html, body, * {
   width: 500px;
   background-color: white;
   border-radius: 5px;
+}
+
+/* Bagian slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+}
+
+.mySlide {
+  /* display: none; */
+}
+
+.numText {
+  position: absolute;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0 0 3px 0;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 45%;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.numText:hover, .prev:hover, .next:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s all;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.dots {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 0 1px;
+  background-color: #717171;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.active, .dots:hover {
+  background-color: black;
+}
+
+/* Bagian Animasi */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1.0;}
 }
