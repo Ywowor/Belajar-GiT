@@ -29,7 +29,7 @@ html, body, * {
 }
 
 .mySlide {
-  /* display: none; */
+  display: none;
 }
 
 .numText {
