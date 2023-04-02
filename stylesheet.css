@@ -50,6 +50,7 @@ html, body, * {
   color: white;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
+  user-select: none;
 }
 
 .next {
