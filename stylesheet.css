@@ -74,6 +74,26 @@ html, body, * {
   color: white;
 }
 
+/* Bagian Searching */
+.searchBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.searchBar input {
+  font-size: 13px;
+  border-radius: 2px;
+  width: 50px;
+}
+
+.searchBar button {
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 2px;
+}
+/* Akhir bagian searching */
+
 .dots {
   border-radius: 50%;
   width: 15px;

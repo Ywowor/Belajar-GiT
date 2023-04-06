@@ -30,3 +30,17 @@ function showSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dot[slideIndex-1].className += " active";
 }
+
+function searchImg() {
+    let search = document.getElementById("inputUser").value;
+    let slides = document.getElementsByClassName("mySlide");
+    
+    if (search == 0) {
+        return alert("The number you insert is invalid please try something else");
+    } else if (search > slides.length) {
+        return alert("Sorry The number you insert is out of range please try again");
+    }
+    
+    slideIndex = parseInt(search);
+    showSlide(slideIndex);
+}
